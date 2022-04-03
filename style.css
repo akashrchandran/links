@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+body {
+    background: #1d976c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #93f9b9,
+        #1d976c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #93f9b9,
+        #1d976c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Source Sans Pro, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+em {
+    font-size: large;
+}
+
+.iconic_links {
+    text-align: center;
+    font-size: 40px;
+    word-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    image-rendering: crisp-edges;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container img {
+    height: 20vh;
+    margin-bottom: 10px;
+}
+
+.profile-container strong {
+    text-align: center;
+    font-size: large;
+    font-family: Roboto, sans-serif;
+    display: inline-block;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.links-row {
+    height: 6vh;
+    width: 50vw;
+    border-color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 30px;
+    transition-delay: 0.1s;
+}
+
+.links-row i {
+    margin-right: 10px;
+}
+
+.links-row:hover {
+    background: white;
+    cursor: pointer;
+    filter: brightness(95%);
+    transform: scale(1.05);
+}
+@media only screen and (max-width: 600px) {
+    .links-row {
+        width: 95vw;
+    }
+
+    .profile-container img {
+        height: 10vh;
+    }
+}
