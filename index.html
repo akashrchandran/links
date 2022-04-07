@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Links | Akash R Chandran</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="/css/spinner.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
 </head>
 
 <body>
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
     <div class="profile-container">
         <img src="img/myphoto.png" alt="profile" /> <br />
         <strong>@akashrchandran</strong> <br />
@@ -66,11 +70,18 @@
         </a>
         <a href="https://akashrchandran.in" target="_blank">
             <div class="links-row">
-                <i class="fas fa-globe"></i>
-                Website
+                <i class="fab fa-facebook-f"></i>
+                Facebook
             </div>
         </a>
     </div>
+    <script>
+        let spinnerWrapper = document.querySelector(".spinner-wrapper");
+
+        window.addEventListener("load", function () {
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+        });
+    </script>
 </body>
 
 </html>

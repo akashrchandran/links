@@ -76,6 +76,7 @@ em {
     filter: brightness(95%);
     transform: scale(1.05);
 }
+
 @media only screen and (max-width: 600px) {
     .links-row {
         width: 95vw;
