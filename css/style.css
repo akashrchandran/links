@@ -2,17 +2,37 @@
 
 body {
     background: #1d976c; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        #93f9b9,
-        #1d976c
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right,
-        #93f9b9,
-        #1d976c
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(230deg, rgb(75, 207, 147), rgb(75, 121, 207), rgb(162, 75, 207)) 0% 0% / 300% 300%; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(230deg, rgb(75, 207, 147), rgb(75, 121, 207), rgb(162, 75, 207)) 0% 0% / 300% 300%; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-animation: gradientAnimate 60s ease infinite;
+    -moz-animation: gradientAnimate 60s ease infinite;
+    -o-animation: gradientAnimate 60s ease infinite;
+    animation: gradientAnimate 60s ease infinite;
     font-family: Source Sans Pro, sans-serif;
+}
+
+@-webkit-keyframes gradientAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes gradientAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-o-keyframes gradientAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes gradientAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 a {
@@ -55,6 +75,7 @@ em {
     width: 50vw;
     border-color: white;
     border: 2px solid white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +93,7 @@ em {
 
 .links-row:hover {
     background: white;
+    color: black;
     cursor: pointer;
     filter: brightness(95%);
     transform: scale(1.05);
