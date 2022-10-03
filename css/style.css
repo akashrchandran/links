@@ -75,6 +75,7 @@ em {
     width: 50vw;
     border-color: white;
     border: 2px solid white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +93,7 @@ em {
 
 .links-row:hover {
     background: white;
+    color: black;
     cursor: pointer;
     filter: brightness(95%);
     transform: scale(1.05);
