@@ -70,6 +70,20 @@ em {
     margin-bottom: 10px;
 }
 
+.linkstable {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkstable a {
+    display: inline-block;
+    height: 6vh;
+    width: 50vw;
+}
+
 .links-row {
     height: 6vh;
     width: 50vw;
@@ -79,15 +93,11 @@ em {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-bottom: 10px;
     border-radius: 10px;
     font-family: Source Sans Pro, sans-serif;
     font-size: 30px;
-}
-
-.links-row i {
-    margin-right: 10px;
+    gap: 10px;
+    margin: 10px 0;
 }
 
 .links-row:hover {
